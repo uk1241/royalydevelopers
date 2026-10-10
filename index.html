@@ -12,6 +12,10 @@ de<!doctype html>
   <link rel="stylesheet" href="styles.css">
   <style>
     .footer-brand { align-items: center; text-align: center; }
+    @media (max-width: 700px) {
+      .site-header > .brand { min-width: 0; max-width: calc(100vw - 110px); flex: 0 1 auto; }
+      .site-header > .brand img { width: auto; height: 46px; max-width: 100%; }
+    }
   </style>
 </head>
 <body>
