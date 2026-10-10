@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Completed and ongoing projects by Royaly Developers across Kerala.">
+  <meta name="theme-color" content="#f3f0e8">
+  <title>Our Projects | Royaly Developers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .projects-page-body{cursor:auto;background:#f3f0e8;color:#171717}
+    .projects-page-body a{cursor:pointer}
+    .all-projects-header{min-height:88px;padding:14px 6vw;display:flex;align-items:center;justify-content:space-between;gap:32px;background:#f3f0e8;border-bottom:1px solid rgba(0,0,0,.12)}
+    .all-projects-brand{display:flex;align-items:center;flex-shrink:0}
+    .all-projects-brand img{width:auto;height:54px;max-width:220px;object-fit:contain}
+    .projects-page-nav{display:flex;align-items:center;gap:30px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+    .projects-page-nav a{opacity:.76;transition:opacity .2s}
+    .projects-page-nav a:hover{opacity:1}
+    .projects-page-nav .projects-contact{padding:13px 17px;border:1px solid #9a7750;opacity:1}
+    .projects-intro{padding:76px 7vw 54px;background:#171717;color:#f3f0e8}
+    .projects-intro-inner,.project-register{max-width:1200px;margin:0 auto}
+    .projects-eyebrow{margin:0 0 18px;color:#c2a276;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
+    .projects-intro h1{margin:0;font-size:56px;font-weight:400;line-height:1.1}
+    .projects-intro-copy{max-width:520px;margin:18px 0 0;color:rgba(243,240,232,.68);font-size:13px;line-height:1.8}
+    .projects-summary{display:flex;gap:30px;margin-top:34px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+    .projects-summary strong{margin-right:6px;color:#c2a276;font-weight:500}
+    .project-register{padding:54px 7vw 90px}
+    .project-table-wrap{overflow-x:auto;border-top:1px solid #c9c3b7}
+    .project-table{width:100%;border-collapse:collapse;text-align:left;font-size:12px}
+    .project-table th{padding:17px 16px;color:#777064;font-size:9px;font-weight:500;letter-spacing:.15em;text-transform:uppercase}
+    .project-table td{padding:17px 16px;border-top:1px solid #d8d2c7;vertical-align:middle}
+    .project-table tbody tr{transition:background .2s}
+    .project-table tbody tr:hover{background:#eae6dd}
+    .project-table th:first-child,.project-table td:first-child{width:78px;padding-left:0;color:#8e7654}
+    .project-table th:last-child,.project-table td:last-child{width:150px;padding-right:0}
+    .project-name{font-weight:400}
+    .project-place{color:#716d65}
+    .project-status{display:inline-block;padding:6px 10px;border:1px solid #b8c9b2;color:#385c3c;font-size:9px;letter-spacing:.04em;white-space:nowrap}
+    .project-status.ongoing{border-color:#d3ae73;color:#8b5c20}
+    .projects-page-footer{display:flex;justify-content:space-between;gap:24px;padding:24px 7vw;background:#171717;color:#aaa;font-size:10px}
+    .projects-page-footer a{color:#f3f0e8}
+    @media(max-width:700px){
+      .all-projects-header{min-height:72px;padding:10px 5vw;gap:14px}
+      .all-projects-brand img{height:46px}
+      .projects-page-nav{gap:14px;font-size:8px}
+      .projects-page-nav .projects-contact{padding:10px}
+      .projects-intro{padding:58px 6vw 42px}
+      .projects-intro h1{font-size:42px}
+      .projects-intro-copy{font-size:12px}
+      .projects-summary{gap:18px;font-size:8px}
+      .project-register{padding:30px 5vw 64px}
+      .project-table{min-width:650px}
+      .project-table th,.project-table td{padding:14px 12px}
+      .project-table th:first-child,.project-table td:first-child{padding-left:0}
+      .projects-page-footer{flex-direction:column;padding:22px 5vw}
+    }
+  </style>
+</head>
+<body class="projects-page-body">
+  <header class="all-projects-header">
+    <a class="all-projects-brand" href="index.html" aria-label="Royaly Developers home">
+      <img src="assets/royaly-logo.svg" alt="Royaly Developers">
+    </a>
+    <nav class="projects-page-nav" aria-label="Main navigation">
+      <a href="index.html#projects">Selected Works</a>
+      <a href="index.html#services">Services</a>
+      <a class="projects-contact" href="https://wa.me/919207451268?text=Hello%20Royaly%20Developers%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-intro">
+      <div class="projects-intro-inner">
+        <p class="projects-eyebrow">ROYALY DEVELOPERS / PROJECT REGISTER</p>
+        <h1>Our Projects</h1>
+        <p class="projects-intro-copy">A record of completed and ongoing projects across residential, commercial, institutional and community spaces.</p>
+        <div class="projects-summary" aria-label="Project totals">
+          <span><strong>47</strong> Projects</span>
+          <span><strong>42</strong> Completed</span>
+          <span><strong>5</strong> On Going</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-register" aria-label="All projects">
+      <div class="project-table-wrap">
+        <table class="project-table">
+          <thead><tr><th scope="col">Sl. No.</th><th scope="col">Site Name</th><th scope="col">Place</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="project-name">Skyline Ivy League ( Block- Princeton)</td><td class="project-place">Kakkanad, Edachira</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>2</td><td class="project-name">Skyline Ivy League ( Block- Columbia)</td><td class="project-place">Kakkanad, Edachira</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>3</td><td class="project-name">DLF New Town Heights (Block-G,H,J)</td><td class="project-place">Kakkanad, Echamuku</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>4</td><td class="project-name">Noel Serina</td><td class="project-place">Kakkanad, Athani</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>5</td><td class="project-name">Kinfra Convention Center</td><td class="project-place">Kakkanad, Infopark</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>6</td><td class="project-name">Penta Queen ( A- Block)</td><td class="project-place">Palarivattom, Parivattom</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>7</td><td class="project-name">Anvita Residency</td><td class="project-place">Aluva, Desom</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>8</td><td class="project-name">Periyar Theeram</td><td class="project-place">Aluva, Desom</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>9</td><td class="project-name">Asset Silver steak</td><td class="project-place">Aluva, Kuttamassery</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>10</td><td class="project-name">Earthspace Apartments</td><td class="project-place">Nedumbassery</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>11</td><td class="project-name">George Town</td><td class="project-place">Thodupuzha</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>12</td><td class="project-name">Baby Memorial Hospital</td><td class="project-place">Thodupuzha</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>13</td><td class="project-name">Baby Memorial Hospital</td><td class="project-place">Kannur, Payannur</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>14</td><td class="project-name">Baby Memorial Hospital</td><td class="project-place">Calicut</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>15</td><td class="project-name">Baby Memorial Hospital ( 1st stage)</td><td class="project-place">Perumbavoor</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>16</td><td class="project-name">Apollo Adlux Hospital</td><td class="project-place">Karukutty</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>17</td><td class="project-name">Adlux Convention Center</td><td class="project-place">Karukutty</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>18</td><td class="project-name">Paragon Adlux</td><td class="project-place">Karukutty</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>19</td><td class="project-name">Periyar Residency</td><td class="project-place">Aluva, Periyar Nagar</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>20</td><td class="project-name">Pareckattil Summer Nest</td><td class="project-place">Aluva, Thottakkattukara</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>21</td><td class="project-name">Federal Garden</td><td class="project-place">Aluva, Pulinchodu</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>22</td><td class="project-name">Sargam Periyar Banks</td><td class="project-place">Aluva, Thottakkattukara</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>23</td><td class="project-name">Arya Bhangy Center</td><td class="project-place">Vyttila</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>24</td><td class="project-name">Coworking Space Aryabhangy</td><td class="project-place">Muttom, Kalamassery</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>25</td><td class="project-name">Amity Periyar Infinia</td><td class="project-place">Aluva, Thottumugham</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>26</td><td class="project-name">Cheloor Citadel</td><td class="project-place">Thrissur, Punkunnam</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>27</td><td class="project-name">Cheloor Heights</td><td class="project-place">Thrissur, Kottappuram</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>28</td><td class="project-name">Monsoon Grande</td><td class="project-place">Munnar</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>29</td><td class="project-name">Nandanam Plaza Apartments:</td><td class="project-place">Thrissur, Kottapuram</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>30</td><td class="project-name">FISAT Engineering Collage</td><td class="project-place">Mookkannoor</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>31</td><td class="project-name">Adi Shankara Collage</td><td class="project-place">Kalady</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>32</td><td class="project-name">Jamath Higher Secondary School</td><td class="project-place">Perumbavoor, Thandekkadu</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>33</td><td class="project-name">Gokulam Apartments</td><td class="project-place">Perumbavoor</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>34</td><td class="project-name">Sevens Arcade</td><td class="project-place">Muvattupuzha, Valakom</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>35</td><td class="project-name">Queen Maria Hotel</td><td class="project-place">Manoor</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>36</td><td class="project-name">Surya Hotel</td><td class="project-place">Angamaly</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>37</td><td class="project-name">St. Antonys Church</td><td class="project-place">Thrissur, Puthukkad</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>38</td><td class="project-name">St. Joseph's Syro-Malabar Church</td><td class="project-place">Angamaly, Karayamparambu</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>39</td><td class="project-name">St. Mary's Syro-Malabar Forane Church</td><td class="project-place">Mookkannur</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>40</td><td class="project-name">St. Mary's Church</td><td class="project-place">Neduvannoor</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>41</td><td class="project-name">St. Thomas Church</td><td class="project-place">Pulluvazhy</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>42</td><td class="project-name">St. Rita's Church</td><td class="project-place">Champannor, Angamaly</td><td><span class="project-status">Completed</span></td></tr>
+            <tr><td>43</td><td class="project-name">St. George's Syro-Malabar Church</td><td class="project-place">Chalakudy, Pariyaram</td><td><span class="project-status ongoing">On Going</span></td></tr>
+            <tr><td>44</td><td class="project-name">Fathima Matha Church</td><td class="project-place">Anapara</td><td><span class="project-status ongoing">On Going</span></td></tr>
+            <tr><td>45</td><td class="project-name">Down Town Hotel</td><td class="project-place">Thodupuzha</td><td><span class="project-status ongoing">On Going</span></td></tr>
+            <tr><td>46</td><td class="project-name">Cochin Cables</td><td class="project-place">Thodupuzha</td><td><span class="project-status ongoing">On Going</span></td></tr>
+            <tr><td>47</td><td class="project-name">Canton Mall</td><td class="project-place">Muvattupuzha</td><td><span class="project-status ongoing">On Going</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="projects-page-footer">
+    <span>© 2026 ROYALY DEVELOPERS</span>
+    <a href="mailto:royalydevelopers@gmail.com">royalydevelopers@gmail.com</a>
+    <span>Angamaly, Kerala</span>
+  </footer>
+</body>
+</html>

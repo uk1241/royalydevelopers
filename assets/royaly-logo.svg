@@ -1,0 +1,60 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="220" y1="70" x2="950" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4D888"/>
+      <stop offset="0.2" stop-color="#DDBA5A"/>
+      <stop offset="0.5" stop-color="#B9892E"/>
+      <stop offset="0.75" stop-color="#F4D888"/>
+      <stop offset="1" stop-color="#C08D2E"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="180" y1="120" x2="930" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F5F4"/>
+      <stop offset="0.3" stop-color="#D6D4D3"/>
+      <stop offset="0.7" stop-color="#A4A3A3"/>
+      <stop offset="1" stop-color="#EFEAE3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <path d="M250 200C250 113.7 318.7 45 405 45H795C881.3 45 950 113.7 950 200V250C950 336.3 881.3 405 795 405H405C318.7 405 250 336.3 250 250V200Z" fill="#101010" opacity="0.25"/>
+    <circle cx="600" cy="240" r="260" stroke="url(#gold)" stroke-width="16"/>
+    <path d="M340 278C430 170 490 128 600 128C710 128 770 170 860 278" stroke="url(#gold)" stroke-width="18" stroke-linecap="round"/>
+
+    <g>
+      <path d="M404 280H512V196H608V280H796V196H892V280H970V410H404V280Z" fill="url(#gold)"/>
+      <path d="M520 196H592V240H520V196Z" fill="#0A0A0A" opacity="0.2"/>
+      <path d="M770 196H842V240H770V196Z" fill="#0A0A0A" opacity="0.2"/>
+      <path d="M404 280H497L600 192L703 280H796L600 126L404 280Z" fill="url(#gold)"/>
+      <path d="M500 280H600L690 280L645 320H555L500 280Z" fill="#A77D39" opacity="0.7"/>
+      <rect x="485" y="168" width="18" height="117" fill="url(#gold)"/>
+      <rect x="705" y="168" width="18" height="117" fill="url(#gold)"/>
+      <path d="M480 301V405H422V301H480Z" fill="url(#gold)"/>
+      <path d="M776 301V405H718V301H776Z" fill="url(#gold)"/>
+      <path d="M574 298H626V405H574V298Z" fill="#0A0A0A" opacity="0.18"/>
+      <rect x="391" y="405" width="418" height="36" rx="6" fill="url(#gold)"/>
+    </g>
+
+    <g>
+      <path d="M410 305L510 220H600V395H485C439.2 395 402 357.8 402 312V305H410Z" fill="url(#silver)" opacity="0.9"/>
+      <path d="M790 305L690 220H600V395H715C760.8 395 798 357.8 798 312V305H790Z" fill="url(#silver)" opacity="0.9"/>
+      <rect x="500" y="180" width="40" height="160" fill="url(#silver)"/>
+      <rect x="660" y="180" width="40" height="160" fill="url(#silver)"/>
+      <rect x="535" y="295" width="18" height="82" fill="#D2D2D2" opacity="0.9"/>
+      <rect x="647" y="295" width="18" height="82" fill="#D2D2D2" opacity="0.9"/>
+    </g>
+
+    <g>
+      <path d="M600 118L662 175H538L600 118Z" fill="url(#gold)"/>
+      <path d="M600 74L642 118H558L600 74Z" fill="url(#gold)"/>
+    </g>
+  </g>
+
+  <g>
+    <text x="600" y="520" text-anchor="middle" fill="#F2EFE9" font-family="Poppins, Arial, sans-serif" font-size="126" font-weight="500" letter-spacing="10">ROYALY</text>
+    <text x="600" y="560" text-anchor="middle" fill="#D7C7A3" font-family="Poppins, Arial, sans-serif" font-size="42" font-weight="400" letter-spacing="18">DEVELOPERS</text>
+    <line x1="250" y1="590" x2="950" y2="590" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
