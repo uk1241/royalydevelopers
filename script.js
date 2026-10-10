@@ -6,6 +6,7 @@ const menuButton = document.querySelector('.menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuClose = document.querySelector('.mobile-menu-top button');
 const mobileLinks = document.querySelectorAll('.mobile-menu a');
+const whatsappFloat = document.querySelector('.whatsapp-float');
 
 const updateScroll = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -76,6 +77,19 @@ menuButton.addEventListener('click', () => setMenu(true));
 menuClose.addEventListener('click', () => setMenu(false));
 mobileLinks.forEach((link) => link.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+
+const whatsappObscuredSections = new Set();
+const whatsappVisibilityObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) whatsappObscuredSections.add(entry.target);
+    else whatsappObscuredSections.delete(entry.target);
+  });
+  const obscured = whatsappObscuredSections.size > 0;
+  whatsappFloat.classList.toggle('is-obscured', obscured);
+  whatsappFloat.setAttribute('aria-hidden', String(obscured));
+  whatsappFloat.tabIndex = obscured ? -1 : 0;
+}, { threshold: 0.05 });
+document.querySelectorAll('.contact, body > footer').forEach((section) => whatsappVisibilityObserver.observe(section));
 
 const compare = document.querySelector('.compare-stage');
 const before = document.querySelector('.compare-before');
